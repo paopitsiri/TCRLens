@@ -2,3 +2,10 @@
 We introduce TCRLens, a structure-aware deep learning framework that models residue-level interactions across five critical interface zones using multi-scale graph representations and an equivariant graph neural network (EGNN).
 
 # Requirements
+To set up the conda environment, use the provided `environment.yml` file:
+
+conda env create -f environment.yml
+conda activate TCRLens
+
+# Quick start
+
