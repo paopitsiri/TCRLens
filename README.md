@@ -12,3 +12,10 @@ The raw structural data in PDB format and corresponding binding affinity informa
 To generate interface graphs in HDF5 format, use the preprocessing scripts located in the `generated_script` folder.
 
 
+The script `vae_gan.py` implements a Graph Variational Autoencoder combined with a Generative Adversarial Network (VAE-GAN) for **Generative Augmentation of Non-binding TCR-pMHC-I Interfaces**.  
+It learns the structural distribution of experimentally resolved TCR-pMHC complexes and generates synthetic interface graphs to augment the training data.
+
+
+
+
+
