@@ -28,7 +28,7 @@ data_type = "ppi"
 level = "residue"
 processed_data_path = os.path.join("data_processed_add2_merge_8A", data_type, level)
 input_data_path = glob.glob(os.path.join(processed_data_path, "*.hdf5"))
-output_path = os.path.join("data_processed_add2_merge_8A_tmp", data_type, level)  # for saving predictions results
+output_path = os.path.join("data_processed_add2_merge_8A_tmp", data_type, level)
 
 df_dict = {}
 df_dict["entry"] = []
@@ -75,7 +75,7 @@ for fold, (train_idx, val_idx) in enumerate(kf.split(df_train_valid)):
     print("Loading training data...")
     dataset_train = GraphDataset(
         hdf5_path=input_data_path,
-        subset=list(df_fold_train.entry),  # selects only data points with ids in df_train.entry
+        subset=list(df_fold_train.entry),
         node_features=node_features,
         edge_features=edge_features,
         features_transform=features_transform,
@@ -85,13 +85,13 @@ for fold, (train_idx, val_idx) in enumerate(kf.split(df_train_valid)):
     print("\nLoading validation data...")
     dataset_val = GraphDataset(
         hdf5_path=input_data_path,
-        subset=list(df_fold_val.entry),  # selects only data points with ids in df_valid.entry
+        subset=list(df_fold_val.entry),
         train_source=dataset_train,
     )
     print("\nLoading test data...")
     dataset_test = GraphDataset(
         hdf5_path=input_data_path,
-        subset=list(df_test.entry),  # selects only data points with ids in df_test.entry
+        subset=list(df_test.entry),
         train_source=dataset_train,
     )
     
