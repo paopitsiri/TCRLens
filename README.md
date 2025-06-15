@@ -15,6 +15,19 @@ To generate interface graphs in HDF5 format, use the preprocessing scripts locat
 The script `vae_gan.py` implements a Graph Variational Autoencoder combined with a Generative Adversarial Network (VAE-GAN) for **Generative Augmentation of Non-binding TCR-pMHC-I Interfaces**.  
 It learns the structural distribution of experimentally resolved TCR-pMHC complexes and generates synthetic interface graphs to augment the training data.
 
+All processed interface graphs in HDF5 format are stored in the `data_processed` directory.
+
+- To perform validation on the dataset, use the `training_EGNN.py` script.
+- For repeated k-fold cross-validation, use the `training_EGNN_rkFold.py` script.
+
+Both `training_EGNN.py` and `training_EGNN_rkFold.py` will print performance metrics after training, including:
+
+- **Precision**: e.g., `0.80`
+- **Recall**: e.g., `0.99`
+- **Accuracy**: e.g., `0.87`
+- **F1-score**: e.g., `0.88`
+
+
 
 
 
