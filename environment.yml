@@ -1,4 +1,4 @@
-name: /lustrefs/disk/project/lt200325-asfvid/env/egnn
+name: TCRLens
 channels:
   - pyg
   - sbl
