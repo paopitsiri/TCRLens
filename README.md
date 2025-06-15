@@ -8,4 +8,7 @@ conda env create -f environment.yml
 conda activate TCRLens
 
 # Quick start
+The raw structural data in PDB format and corresponding binding affinity information are stored in the `data_raw` directory.  
+To generate interface graphs in HDF5 format, use the preprocessing scripts located in the `generated_script` folder.
+
 
