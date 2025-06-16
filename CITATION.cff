@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "TCRLens: Structure-Aware Equivariant Graph Learning for TCR-pMHC-I Recognition and Immunogenic Epitope Discovery"
+authors:
+  - family-names: Siriarchawattana
+    given-names: Paopit
+  - family-names: Ingsriswang
+    given-names: Supawadee
+  - family-names: Kaewborisuth
+    given-names: Challika
+  - family-names: Jongkaewwattana
+    given-names: Anan
+date-released: 2025-06-15
+version: "1.0"
+license: Apache-2.0
+url: https://github.com/paopitsiri/TCRLens
+keywords:
+  - TCR
+  - pMHC
+  - immunogenicity
+  - graph neural network
+  - equivariant GNN
+  - deep learning
