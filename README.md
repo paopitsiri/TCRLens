@@ -27,6 +27,12 @@ Both `training_EGNN.py` and `training_EGNN_rkFold.py` will print performance met
 - **Accuracy**
 - **F1-score**
 
+#  Citation
+
+If you use **TCRLens** in your research, please cite this repository.
+Citation metadata is provided in [`CITATION.cff`](./CITATION.cff),  
+You can also click the **"Cite this repository"** button at the top of the GitHub page to obtain citation formats like BibTeX, APA, and MLA.
+
 # License
 This project is covered under the Apache 2.0 License.
 
