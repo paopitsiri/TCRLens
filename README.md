@@ -27,7 +27,8 @@ Both `training_EGNN.py` and `training_EGNN_rkFold.py` will print performance met
 - **Accuracy**
 - **F1-score**
 
-
+# License
+This project is covered under the Apache 2.0 License.
 
 
 
