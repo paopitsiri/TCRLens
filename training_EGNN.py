@@ -78,7 +78,7 @@ print(f"\t- Class 1: {len(df_test[df_test.target == 1])} samples, {round(100*len
 # Define graph dataset parameters
 target = "binary"
 task = "classif"
-fol = "egnn"
+fol = "random"
 node_features = ["res_type", "polarity", "res_size", "res_mass", "res_charge", "res_pI"]
 edge_features = ["distance", "same_chain", "covalent", "electrostatic", "vanderwaals"]
 features_transform = {"all": {"transform": lambda x: np.cbrt(x), "standardize": True}}
