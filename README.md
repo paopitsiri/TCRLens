@@ -22,10 +22,12 @@ All processed interface graphs in HDF5 format are stored in the `data_processed`
 
 Both `training_EGNN.py` and `training_EGNN_rkFold.py` will print performance metrics after training, including:
 
-- **Precision**: e.g., `0.80`
-- **Recall**: e.g., `0.99`
-- **Accuracy**: e.g., `0.87`
-- **F1-score**: e.g., `0.88`
+- **Precision**
+- **Recall**
+- **Accuracy**
+- **F1-score**
+
+
 
 
 
