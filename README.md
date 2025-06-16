@@ -8,8 +8,8 @@ We introduce TCRLens, a structure-aware deep learning framework that models resi
 # Requirements
 To set up the conda environment, use the provided `environment.yml` file:<br>
 
-`conda env create -f environment.yml`<br>
-`conda activate TCRLens`
+`mamba env create -f environment.yml`<br>
+`mamba activate TCRLens`
 
 # Quick start
 The raw structural data in PDB format and corresponding binding affinity information are stored in the `data_raw` directory.  
