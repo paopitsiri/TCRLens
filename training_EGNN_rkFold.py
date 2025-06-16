@@ -45,7 +45,7 @@ df = pd.DataFrame(data=df_dict)
 # Define training parameters and feature selections
 target = "binary"
 task = "classif"
-fol = "rkf_noTypeS"
+fol = "rkf"
 node_features = ["res_type", "polarity", "res_size", "res_mass", "res_charge", "res_pI"]
 edge_features = ["distance", "same_chain", "covalent", "electrostatic", "vanderwaals"]
 features_transform = {"all": {"transform": lambda x: np.cbrt(x), "standardize": True}}
