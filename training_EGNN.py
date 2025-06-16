@@ -44,9 +44,9 @@ def check_hdf5_for_nan(file_path):
 # Define data paths
 data_type = "ppi"
 level = "residue"
-processed_data_path = os.path.join("data_processed_add_merge_8A_gen_all", data_type, level)
+processed_data_path = os.path.join("data_processed", data_type, level)
 input_data_path = glob.glob(os.path.join(processed_data_path, "*.hdf5"))
-output_path = os.path.join("data_processed_add_CDE_8A", data_type, level)
+output_path = os.path.join("data_processed", data_type, level)
 
 # Load target labels and entries from HDF5 files
 df_dict = {"entry": [], "target": []}
@@ -78,7 +78,7 @@ print(f"\t- Class 1: {len(df_test[df_test.target == 1])} samples, {round(100*len
 # Define graph dataset parameters
 target = "binary"
 task = "classif"
-fol = "noNodeS"
+fol = "egnn"
 node_features = ["res_type", "polarity", "res_size", "res_mass", "res_charge", "res_pI"]
 edge_features = ["distance", "same_chain", "covalent", "electrostatic", "vanderwaals"]
 features_transform = {"all": {"transform": lambda x: np.cbrt(x), "standardize": True}}
